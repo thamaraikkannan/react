@@ -26,11 +26,10 @@ class DishDetail extends Component {
     renderComments(comments) {
         if (comments.length>0) {
             const commentList = comments.map(comment => 
-                <li key={comment.id}>
-                    <li>{comment.comment}</li>
-                    <li>--{comment.author},&nbsp;{new Intl.DateTimeFormat('en-US', {year:'numeric', month:'short', day:'2-digit'})
-                    .format(new Date(comment.date))}</li>
-                </li>  
+                <li key={comment.id}>
+                    <li>{comment.comment}</li>
+                    <li>--{comment.author},&nbsp;{new Intl.DateTimeFormat('en-US', {year:'numeric', month:'short', day:'2-digit'}).format(new Date(comment.date))}</li>
+                </li>
             ) 
             return(
                 <div>                    
