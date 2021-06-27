@@ -15,6 +15,8 @@ export const postComment = (dishId, rating, author, comment) => (dispatch) => {
         author: author,
         comment: comment
     };
+    //here just notifying the changes
+    //release commit
     
     newComment.date = new Date().toISOString();
     
