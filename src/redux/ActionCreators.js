@@ -15,6 +15,7 @@ export const postComment = (dishId, rating, author, comment) => (dispatch) => {
         author: author,
         comment: comment
     };
+    
     newComment.date = new Date().toISOString();
     
     return fetch(baseUrl + 'comments', {
